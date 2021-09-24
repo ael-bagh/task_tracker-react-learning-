@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
+  margin: 10;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,6 +11,60 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header {
+  @apply text-3xl p-2 m-12 border-l-4 border-r-4 border-green-300 flex flex-row gap-2 items-center justify-between;
+}
+
+.btn  {
+  @apply p-4 rounded-lg shadow-md;
+}
+
+.btn-green {
+  @apply text-white text-xl bg-green-500 hover:bg-green-700;
+}
+
+.task {
+  @apply flex flex-row items-center justify-between border-2 border-gray-500 border-l-4 p-4 bg-gray-100;
+}
+
+.tasks {
+  @apply flex flex-col gap-2 p-4 m-8;
+}
+
+.tasktext {
+  @apply text-lg text-gray-800;
+}
+.taskday {
+  @apply text-sm text-gray-600;
+}
+
+.icons{
+  @apply flex flex-col gap-4;
+}
+
+.xicon {
+  color: red;
+  cursor: pointer;
+}
+.bicon {
+  cursor: pointer;
+}
+
+.inp {
+  @apply  border-2 border-gray-300 p-2 rounded-md;
+}
+
+.rem {
+  @apply flex flex-row gap-2 items-center mr-10 ml-10 p-2;
+}
+
+.form-control
+{
+  @apply flex flex-col mr-10 ml-10 mb-2 p-4;
+}
+.label {
+  @apply text-lg font-semibold;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
